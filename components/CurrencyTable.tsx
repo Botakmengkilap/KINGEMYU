@@ -25,17 +25,23 @@ const CurrencyTable: React.FC = () => {
       <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}>
         <thead>
           <tr>
-            <th style={{ border: "1px solid #ddd", padding: "8px" }}>Currency</th>
-            <th style={{ border: "1px solid #ddd", padding: "8px" }}>Buy</th>
-            <th style={{ border: "1px solid #ddd", padding: "8px" }}>Sell</th>
+            <th style={{ border: "0.5px solid black", padding: "8px", backgroundColor: "black", color: "white" }}>
+              Mata Uang
+            </th>
+            <th style={{ border: "0.5px solid black", padding: "8px", backgroundColor: "red", color: "white" }}>
+              Buy (Kami Membeli Valas Dari Anda)
+            </th>
+            <th style={{ border: "0.5px solid black", padding: "8px", backgroundColor: "green", color: "white" }}>
+              Sell (Kami Menjual Valas Ke Anda)
+            </th>
           </tr>
         </thead>
         <tbody>
           {data.map((item, index) => (
             <tr key={index}>
-              <td style={{ border: "1px solid #ddd", padding: "8px" }}>{item.currency}</td>
-              <td style={{ border: "1px solid #ddd", padding: "8px" }}>{item.buy}</td>
-              <td style={{ border: "1px solid #ddd", padding: "8px" }}>{item.sell}</td>
+              <td style={{ border: "0.5px solid black", padding: "8px", color: "black" }}>{item.currency}</td>
+              <td style={{ border: "0.5px solid black", padding: "8px", color: "red" }}>{item.buy}</td>
+              <td style={{ border: "0.5px solid black", padding: "8px", color: "green" }}>{item.sell}</td>
             </tr>
           ))}
         </tbody>

@@ -74,56 +74,56 @@ export default function page() {
         {/* Gallery */}
 
         <h1 className="text-center font-bold mt-50px" id="gallery">
-          GALERI
-        </h1>
-        <hr className="border-0 bg-black h-1 rounded-full mb-4 mx-45%" />
+  GALERI
+</h1>
+<hr className="border-0 bg-black h-1 rounded-full mb-4 mx-45%" />
 
-        <div className="grid grid-cols-3 grid-rows-2 text-center mx-20%">
-          <Image
-            src={"/image/ch.jpg"}
-            width={170}
-            height={170}
-            alt="bsv"
-            className="hover:scale-125 p-1"
-          ></Image>
-          <Image
-            src={"/image/papan.jpg"}
-            width={170}
-            height={170}
-            alt="bsv"
-            className="hover:scale-125 p-1"
-          ></Image>
-          <Image
-            src={"/image/dalam.jpg"}
-            width={170}
-            height={170}
-            alt="bsv"
-            className="hover:scale-125 p-1"
-          ></Image>
-          <Image
-            src={"/image/dekat.jpg"}
-            width={170}
-            height={170}
-            alt="bsv"
-            className="hover:scale-125 p-1"
-          ></Image>
-          <Image
-            src={"/image/in.jpg"}
-            width={170}
-            height={170}
-            alt="bsv"
-            className="hover:scale-125 p-1"
-          ></Image>
-          <Image
-            src={"/image/360.jpg"}
-            width={170}
-            height={170}
-            alt="bsv"
-            className="hover:scale-125 p-1"
-          ></Image>
-        </div>
+<div className="grid grid-cols-3 grid-rows-2 gap-4 justify-items-center items-center mx-20%">
+  <Image
+    src={"/image/ch.jpg"}
+    width={170}
+    height={170}
+    alt="bsv"
+    className="hover:scale-125 p-1 border-2 border-black"
+  />
+  <Image
+    src={"/image/papan.jpg"}
+    width={170}
+    height={170}
+    alt="bsv"
+    className="hover:scale-125 p-1 border-2 border-black"
+  />
+  <Image
+    src={"/image/dalam.jpg"}
+    width={170}
+    height={170}
+    alt="bsv"
+    className="hover:scale-125 p-1 border-2 border-black"
+  />
+  <Image
+    src={"/image/dekat.jpg"}
+    width={170}
+    height={170}
+    alt="bsv"
+    className="hover:scale-125 p-1 border-2 border-black"
+  />
+  <Image
+    src={"/image/in.jpg"}
+    width={170}
+    height={170}
+    alt="bsv"
+    className="hover:scale-125 p-1 border-2 border-black"
+  />
+  <Image
+    src={"/image/360.jpg"}
+    width={170}
+    height={170}
+    alt="bsv"
+    className="hover:scale-125 p-1 border-2 border-black"
+  />
+</div>
         {/* Bagian Footer */}
-        <footer className="p-8 bg-gray-50" id="kontak">
+        <footer className="p-8 bg-yellow-50" id="kontak">
           <h1 className="text-center text-xl font-bold mb-6">Contact</h1>
 
           {/* Flex container untuk peta dan tabel */}
@@ -172,72 +172,60 @@ export default function page() {
 
             {/* Bagian Tabel Jam Buka */}
             <div className="flex-1 max-w-xs">
-              <table className="min-w-full table-auto border-collapse border border-gray-300 shadow-md">
-                <thead>
-                  <tr className="bg-gray-200">
-                    <th
-                      className={`${roboto_condensed.className} px-4 py-2 text-left font-semibold border border-gray-300`}
-                    >
-                      Hari
-                    </th>
-                    <th
-                      className={`${roboto_condensed.className} px-4 py-2 text-left font-semibold border border-gray-300`}
-                    >
-                      Jam Buka
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {/* Row 1 */}
-                  <tr className="odd:bg-gray-50">
-                    <td className="px-4 py-2 border border-gray-300">Senin</td>
-                    <td className="px-4 py-2 border border-gray-300">
-                      09:00 - 16:30
-                    </td>
-                  </tr>
-                  {/* Row 2 */}
-                  <tr className="odd:bg-gray-50">
-                    <td className="px-4 py-2 border border-gray-300">Selasa</td>
-                    <td className="px-4 py-2 border border-gray-300">
-                      09:00 - 16:30
-                    </td>
-                  </tr>
-                  {/* Row 3 */}
-                  <tr className="odd:bg-gray-50">
-                    <td className="px-4 py-2 border border-gray-300">Rabu</td>
-                    <td className="px-4 py-2 border border-gray-300">
-                      09:00 - 16:30
-                    </td>
-                  </tr>
-                  {/* Row 4 */}
-                  <tr className="odd:bg-gray-50">
-                    <td className="px-4 py-2 border border-gray-300">Kamis</td>
-                    <td className="px-4 py-2 border border-gray-300">
-                      09:00 - 16:30
-                    </td>
-                  </tr>
-                  {/* Row 5 */}
-                  <tr className="odd:bg-gray-50">
-                    <td className="px-4 py-2 border border-gray-300">Jumat</td>
-                    <td className="px-4 py-2 border border-gray-300">
-                      09:00 - 16:30
-                    </td>
-                  </tr>
-                  {/* Row 6 */}
-                  <tr className="odd:bg-gray-50">
-                    <td className="px-4 py-2 border border-gray-300">Sabtu</td>
-                    <td className="px-4 py-2 border border-gray-300">
-                      09:00 - 14:00
-                    </td>
-                  </tr>
-                  {/* Row 7 */}
-                  <tr className="odd:bg-gray-50">
-                    <td className="px-4 py-2 border border-gray-300">Minggu</td>
-                    <td className="px-4 py-2 border border-gray-300">Tutup</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+  <table className="min-w-full table-auto border-collapse border border-gray-300 shadow-md">
+    <thead>
+      <tr className="bg-gray-200">
+        <th
+          className={`${roboto_condensed.className} px-4 py-2 text-left font-semibold border border-black text-black-500`}
+        >
+          Hari
+        </th>
+        <th
+          className={`${roboto_condensed.className} px-4 py-2 text-left font-semibold border border-black text-black-500`}
+        >
+          Jam Buka
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {/* Row 1 */}
+      <tr className="odd:bg-gray-50">
+        <td className="px-4 py-2 border border-black">Senin</td>
+        <td className="px-4 py-2 border border-black">09:00 - 16:30</td>
+      </tr>
+      {/* Row 2 */}
+      <tr className="odd:bg-gray-50">
+        <td className="px-4 py-2 border border-black">Selasa</td>
+        <td className="px-4 py-2 border border-black">09:00 - 16:30</td>
+      </tr>
+      {/* Row 3 */}
+      <tr className="odd:bg-gray-50">
+        <td className="px-4 py-2 border border-black">Rabu</td>
+        <td className="px-4 py-2 border border-black">09:00 - 16:30</td>
+      </tr>
+      {/* Row 4 */}
+      <tr className="odd:bg-gray-50">
+        <td className="px-4 py-2 border border-black">Kamis</td>
+        <td className="px-4 py-2 border border-black">09:00 - 16:30</td>
+      </tr>
+      {/* Row 5 */}
+      <tr className="odd:bg-gray-50">
+        <td className="px-4 py-2 border border-black">Jumat</td>
+        <td className="px-4 py-2 border border-black">09:00 - 16:30</td>
+      </tr>
+      {/* Row 6 */}
+      <tr className="odd:bg-gray-50">
+        <td className="px-4 py-2 border border-black">Sabtu</td>
+        <td className="px-4 py-2 border border-black">09:00 - 14:00</td>
+      </tr>
+      {/* Row 7 */}
+      <tr className="odd:bg-gray-50">
+        <td className="px-4 py-2 border border-black">Minggu</td>
+        <td className="px-4 py-2 border border-black">Tutup</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
           </div>
           <div className="bg-color2 w-full">
             <p
