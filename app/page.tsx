@@ -18,7 +18,7 @@ export default function page() {
       <header className="relative w-full h-60 ">
         <Image
           src={"/image/bg.jpg"}
-          alt="logo uti"
+          alt="bg"
           layout="fill"
           objectFit="cover"
           className="blur-sm "

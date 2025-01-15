@@ -68,66 +68,6 @@ export default function RootLayout({
               Contact
             </Link>
           </div>
-
-          {/* Hamburger Menu untuk Mobile */}
-          <div className="sm:hidden relative">
-            <button
-              onClick={toggleMenu} // Toggle menu saat tombol diklik
-              className="text-black focus:outline-none"
-            >
-              {/* Icon Hamburger */}
-              <svg
-                className="w-6 h-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-
-            {/* Dropdown Menu */}
-            {isMenuOpen && (
-              <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-                <div className="bg-white w-48 rounded-md shadow-lg">
-                  <Link
-                    href="/"
-                    className="block px-4 py-2 text-black hover:bg-gray-200"
-                    onClick={closeMenu} // Menutup menu setelah klik
-                  >
-                    Beranda
-                  </Link>
-                  <Link
-                    href="#about"
-                    className="block px-4 py-2 text-black hover:bg-gray-200"
-                    onClick={closeMenu} // Menutup menu setelah klik
-                  >
-                    About
-                  </Link>
-                  <Link
-                    href="#gallery"
-                    className="block px-4 py-2 text-black hover:bg-gray-200"
-                    onClick={closeMenu} // Menutup menu setelah klik
-                  >
-                    Gallery
-                  </Link>
-                  <Link
-                    href="#kontak"
-                    className="block px-4 py-2 text-black hover:bg-gray-200"
-                    onClick={closeMenu} // Menutup menu setelah klik
-                  >
-                    Contact
-                  </Link>
-                </div>
-              </div>
-            )}
-          </div>
         </nav>
 
         {/* Page Content */}
