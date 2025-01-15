@@ -33,13 +33,14 @@ export default function RootLayout({
     <html lang="en">
       <body>
         
-        {/* Navbar */}
-        <nav className="fixed top-0 left-0 w-full bg-white shadow-md px-6 flex items-center justify-between z-50 h-12">
-          {/* Brand */}
-          <h1 className={`${roboto_condensed.className} text-md font-semibold`}>
-            PT. Bina Sukses Valasindo
-          </h1>
-
+      <nav className="fixed top-0 left-0 w-full bg-white shadow-md px-6 flex items-center justify-between z-50 h-12">
+  {/* Brand */}
+  <div className="flex items-center">
+    <img src="/Logo.jpg" alt="Logo" className="w-8 h-8 mr-3" />
+    <h1 className={`${roboto_condensed.className} text-md font-semibold`}>
+      PT. Bina Sukses Valasindo
+    </h1>
+  </div>
           {/* Menu untuk Desktop */}
           <div className="hidden sm:flex sm:gap-4">
             <Link
