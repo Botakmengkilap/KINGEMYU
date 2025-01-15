@@ -22,7 +22,16 @@ const CurrencyTable: React.FC = () => {
 
   return (
     <div style={{ overflowX: "auto" }}>
-      <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}>
+  <table
+    className="bg-white" // Menjadikan tabel memiliki background putih
+    style={{
+      width: "60%",
+      borderCollapse: "collapse",
+      textAlign: "center",
+      margin: "auto", // Membuat tabel berada di tengah
+    }}
+  >
+
         <thead>
           <tr>
             <th style={{ border: "0.5px solid black", padding: "8px", backgroundColor: "black", color: "white" }}>

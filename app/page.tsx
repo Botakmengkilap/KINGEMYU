@@ -52,12 +52,12 @@ export default function page() {
 
           <div className="sm:w-1/2 flex flex-col items-center justify-center">
             <div className="flex flex-col items-center">
-              <h1
-                className={`${roboto_condensed.className} text-2xl font-bold text-center mb-4`}
-              >
-                About
-              </h1>
-              <p className={`${roboto_condensed.className} text-justify text-sm text-center sm:text-left`}>
+            <h1
+           className={`${roboto_condensed.className} font-bold text-2xl text-center mt-5 mb-4`}>
+              About Us
+            </h1>
+
+              <p className={`${roboto_condensed.className} text-justify text-base text-center sm:text-center mb-10`}>
               Untuk beberapa mata uang, terdapat perbedaan nilai tukar yang berlaku untuk denominasi yang berbeda. Untuk versi lama dari mata uang tertentu, kami tidak dapat melakukan penukaran. Setelah melalui beberapa proses pemeriksaan (pemeriksaan mesin, pemeriksaan dengan sinar UV, dan pemeriksaan manual), nilai tukar yang berbeda mungkin berlaku tergantung pada kondisi mata uang tersebut.
               </p>
             </div>
@@ -65,7 +65,7 @@ export default function page() {
         </div>
         <div>
           <main style={{ padding: "20px" }}>
-            <h1>Currency Rates</h1>
+            <h1 className="font-bold mb-5 text-center text-2xl">Harga Kurs</h1>
             <CurrencyTable />
           </main>
         </div>
@@ -73,12 +73,12 @@ export default function page() {
 
         {/* Gallery */}
 
-        <h1 className="text-center font-bold mt-50px" id="gallery">
+        <h1 className="text-center font-bold mt-6" id="gallery">
   GALERI
 </h1>
-<hr className="border-0 bg-black h-1 rounded-full mb-4 mx-45%" />
+<hr className="border-0 bg-black h-1 rounded-full mb-6 mx-45%" />
 
-<div className="grid grid-cols-3 grid-rows-2 gap-4 justify-items-center items-center mx-20%">
+<div className="grid grid-cols-3 grid-rows-2 gap-4 justify-items-center items-center mx-20% mb-12">
   <Image
     src={"/image/ch.jpg"}
     width={170}
